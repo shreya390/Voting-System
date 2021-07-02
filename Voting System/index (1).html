@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>  
+    	<style>
+
+button:hover, button:active {
+  background-color: green;
+  color: white;
+}
+</style>
+
+         <title>Voting Poll system </title>
+    </head>
+    <body>
+    	<p> 
+
+    		Voting Application
+    	</p>
+
+        <button onclick="registerNewVote()">Register new Vote</button>
+        <p> the votes are :</p>
+       
+        <p id="demo"></p>
+        <script>
+
+        let models=[0,0,0,0];
+		  
+		 let model_values="";
+
+		function registerNewVote(){
+		var x=Number(prompt("Which is the best indian car?\n0: Maruthi\n1: Hyundai\n2: KIA\n3: Ford"));
+
+		if(x>=0 && x<=3){
+		 var  value=models[x];
+
+		 value++;
+		 models[x]=value;
+		 model_values= Object.values(models);
+		 //document.getElementById("demo").innerHTML = model_values;
+		displayResults(model_values);
+		}
+
+		else if(x==null){
+		alert("Enter valid number")
+		}
+
+		}
+		function displayResults(model_values){
+		  
+		   document.getElementById("demo").innerHTML =model_values;
+ 
+		  //console.log("Poll results are "+model_values);
+		}
+
+
+        </script>
+    </body>
+
+</html>
