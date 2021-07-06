@@ -19,25 +19,24 @@ button:hover, button:active {
     	</p>
 
         <button onclick="registerNewVote()">Register new Vote</button>
-        <p> the votes are :</p>
        
         <p id="demo"></p>
         <script>
 
-        let models=[0,0,0,0];
+        let model=[0,0,0,0];
 		  
 		 let model_values="";
 
 		function registerNewVote(){
-		var x=Number(prompt("Which is the best indian car?\n0: Maruthi\n1: Hyundai\n2: KIA\n3: Ford"));
+		var option=Number(prompt("Which is the best indian car?\n0: Maruthi\n1: Hyundai\n2: KIA\n3: Ford"));
 
-		if(x>=0 && x<=3){
-		 var  value=models[x];
+		if(option>=0 && option<=3){
+		 var  value=model[option];
 
 		 value++;
-		 models[x]=value;
-		 model_values= Object.values(models);
-		 //document.getElementById("demo").innerHTML = model_values;
+		 model[option]=value;
+		 model_values= Object.values(model);
+
 		displayResults(model_values);
 		}
 
@@ -47,8 +46,8 @@ button:hover, button:active {
 
 		}
 		function displayResults(model_values){
-		  
-		   document.getElementById("demo").innerHTML =model_values;
+
+              console.log("Poll results are "+model_values);
 
 		}
 
