@@ -1,39 +1,4 @@
 
-
-        // let model=[0,0,0,0];
-		  
-		//  let poll_values="";
-
-		// function registerNewVote(){
-		// var option=Number(prompt("Which is the best indian car?\n0: Maruthi\n1: Hyundai\n2: KIA\n3: Ford"));
-        
-		// if(option>=0 && option<=3){
-		//  var  value=model[option];
-
-		//  value++;
-		//  model[option]=value;
-		//  poll_values= Object.values(model);
-
-		// displayResults(poll_values);
-		// }
-
-		// else{
-		// alert("Enter valid option")
-		// }
-
-		// }
-		// function displayResults(poll_values){
-
-        //       console.log("Poll results are "+poll_values);
-
-		// }
-
-        // module.exports=
-        // {
-        //     registerNewVote,
-        // displayResults,
-        // }
-
 		let models={
 			0:0,
 			1:0,
